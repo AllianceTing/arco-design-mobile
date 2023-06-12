@@ -228,6 +228,12 @@ export interface TabsProps {
      */
     showUnderline?: boolean;
     /**
+     * 下划线是否根据 tab cell 长度自适应
+     * @en Whether the underline is adaptive according to the length of the tab cell
+     * @default false
+     */
+    underlineAdaptive?: boolean;
+    /**
      * 触发onTouchStopped的最小阈值
      * @en Minimum threshold to trigger onTouchStopped
      * @default 0
@@ -323,6 +329,12 @@ export interface TabsProps {
      * @default true
      */
     translateZ?: boolean;
+    /**
+     * 是否启用滑动节能模式，开启后TabPane外层容器不会随panes数量撑开并提升为合成层，仅滑动当前选中的pane，其他pane在选中前将被隐藏
+     * @en Whether to enable the energy-saving sliding mode. After opening, the outer container of the TabPane will not expand with the number of panes and be promoted to a composite layer. Only the currently selected pane will be slid, and other panes will be hidden before being selected.
+     * @default false
+     */
+    swipeEnergySaving?: boolean;
     /**
      * 当滑到第一页或最后一页，还想再滑动时触发
      * @en Triggered when swiping to the first or last page and want to swipe again
@@ -511,6 +523,7 @@ export interface TabCellProps
         | 'mode'
         | 'overflowThreshold'
         | 'showUnderline'
+        | 'underlineAdaptive'
         | 'disabled'
         | 'renderTabBarItem'
         | 'renderTabBarInner'
@@ -627,6 +640,7 @@ export interface TabPaneProps
         | 'fullScreen'
         | 'autoHeight'
         | 'onScroll'
+        | 'swipeEnergySaving'
     > {
     prefixCls?: string;
     panes: ReactNodeArray;
@@ -665,6 +679,13 @@ export interface TabPaneRef {
     setCurrentHeight: () => void;
 }
 
+export interface OffsetRect {
+    left: number;
+    top: number;
+    width: number;
+    height: number;
+}
+
 export interface TabCellUnderlineProps
     extends Pick<
         TabCellProps,
@@ -684,9 +705,14 @@ export interface TabCellUnderlineProps
         | 'underlineSize'
         | 'underlineThick'
         | 'renderUnderline'
+        | 'underlineAdaptive'
     > {
     prefix: string;
     showLine: boolean;
+    getTabRect: (index: number) => {
+        left: number;
+        width: number;
+    };
     getTabCenterLeft: (index: number) => number;
 }
 

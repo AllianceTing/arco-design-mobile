@@ -95,6 +95,7 @@ const Tabs = forwardRef((props: TabsProps, ref: Ref<TabsRef>) => {
         caterpillarMaxScale,
         caterpillarProperty = 'scale',
         showUnderline = true,
+        underlineAdaptive = false,
         stopTouchThreshold = 0,
         touchSideDisableThreshold = 0,
         onTouchStopped,
@@ -107,6 +108,7 @@ const Tabs = forwardRef((props: TabsProps, ref: Ref<TabsRef>) => {
         fullScreen,
         autoHeight,
         tabBarStopPropagation = true,
+        swipeEnergySaving = false,
     } = props;
     const domRef = useRef<HTMLDivElement | null>(null);
     const cellRef = useRef<TabCellRef | null>(null);
@@ -190,6 +192,7 @@ const Tabs = forwardRef((props: TabsProps, ref: Ref<TabsRef>) => {
         // 利用受控手动更改index时，给cell line加上动画
         // @en Animate the cell line when changeing the index
         setCellTrans(true);
+        changeFromRef.current = 'manual';
     }, [activeTab]);
 
     useUpdateEffect(() => {
@@ -439,6 +442,7 @@ const Tabs = forwardRef((props: TabsProps, ref: Ref<TabsRef>) => {
                     hideTabBarBeforeMounted,
                     overflowThreshold,
                     showUnderline,
+                    underlineAdaptive,
                     disabled,
                     renderTabBarItem,
                     renderTabBarInner,
@@ -478,6 +482,7 @@ const Tabs = forwardRef((props: TabsProps, ref: Ref<TabsRef>) => {
                             tabPaneExtra={tabPaneExtra}
                             autoHeight={autoHeight}
                             onScroll={onScroll}
+                            swipeEnergySaving={swipeEnergySaving}
                             {...commonProps}
                         />
                     </div>

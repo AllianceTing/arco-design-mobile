@@ -46,6 +46,7 @@ Used to let the user switch between different views. In order to optimize the re
 |hideTabBarBeforeMounted|Whether to hide the TabBar before the component is loaded to prevent redundant scrolling effects when overflowing|boolean|-|
 |overflowThreshold|When the number of TabBars is greater than or equal to the number of TabBars, it is considered to overflow, which is used for ssr first screen rendering optimization before dom loading is completed|number|5|
 |showUnderline|Whether to display underline|boolean|true|
+|underlineAdaptive|Whether the underline is adaptive according to the length of the tab cell|boolean|false|
 |stopTouchThreshold|Minimum threshold to trigger onTouchStopped|number|0|
 |touchSideDisableThreshold|The distance from the edge of the screen to disable the tabs swipe event when you start swiping right|number|0|
 |stopPropagation|In swipe mode, whether the touch event need stopPropagation|boolean|true|
@@ -63,6 +64,7 @@ Used to let the user switch between different views. In order to optimize the re
 |tabPaneStyle|Custom style of TabPane outer container|CSSProperties|-|
 |tabPaneExtra|Extra rendering elements of TabPane, which shoule be absolute positioning|ReactNode|-|
 |translateZ|Whether TabPane and TabBar open translateZ|boolean|true|
+|swipeEnergySaving|Whether to enable the energy\-saving sliding mode\. After opening, the outer container of the TabPane will not expand with the number of panes and be promoted to a composite layer\. Only the currently selected pane will be slid, and other panes will be hidden before being selected\.|boolean|false|
 |onTouchStopped|Triggered when swiping to the first or last page and want to swipe again|(direction: 1 \| \-1) =\> void|-|
 |onChange|Callback when tab changes|(tab: TabData, index: number, from?: string) =\> void|-|
 |onAfterChange|Callback when the tab changes and the animation is completed|(tab: TabData, index: number, from?: string) =\> void|-|
@@ -145,6 +147,7 @@ string | { [x: string]: any; title: ReactNode; }
 |hideTabBarBeforeMounted|Whether to hide the TabBar before the component is loaded to prevent redundant scrolling effects when overflowing|boolean|-|
 |overflowThreshold|When the number of TabBars is greater than or equal to the number of TabBars, it is considered to overflow, which is used for ssr first screen rendering optimization before dom loading is completed|number|5|
 |showUnderline|Whether to display underline|boolean|true|
+|underlineAdaptive|Whether the underline is adaptive according to the length of the tab cell|boolean|false|
 |mode|Tabs switching mode, swipe is sliding mode, scroll is scroll listening mode|"swipe" \| "scroll"|"swipe"|
 |tabBarClass|Custom classname of TabBar outer container|string|-|
 |tabBarStyle|Custom style of TabBar outer container|CSSProperties|-|

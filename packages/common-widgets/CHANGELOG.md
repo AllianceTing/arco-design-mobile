@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.15.4](https://github.com/arco-design/arco-design-mobile/compare/@arco-design/mobile-utils@2.15.3...@arco-design/mobile-utils@2.15.4) (2023-05-19)
+
+**Note:** Version bump only for package @arco-design/mobile-utils
+
+
+
+
+
+## [2.15.3](https://github.com/arco-design/arco-design-mobile/compare/@arco-design/mobile-utils@2.15.2...@arco-design/mobile-utils@2.15.3) (2023-05-16)
+
+**Note:** Version bump only for package @arco-design/mobile-utils
+
+
+
+
+
+## [2.15.2](https://github.com/arco-design/arco-design-mobile/compare/@arco-design/mobile-utils@2.15.1...@arco-design/mobile-utils@2.15.2) (2023-05-10)
+
+**Note:** Version bump only for package @arco-design/mobile-utils
+
+
+
+
+
+## [2.15.1](https://github.com/arco-design/arco-design-mobile/compare/@arco-design/mobile-utils@2.15.0...@arco-design/mobile-utils@2.15.1) (2023-04-26)
+
+**Note:** Version bump only for package @arco-design/mobile-utils
+
+
+
+
+
+# [2.15.0](https://github.com/arco-design/arco-design-mobile/compare/@arco-design/mobile-utils@2.14.0...@arco-design/mobile-utils@2.15.0) (2023-04-25)
+
+
+### Bug Fixes
+
+* `PickerView` support the complete data currently selected in "onPickerChange" & code optimization ([#60](https://github.com/arco-design/arco-design-mobile/issues/60)) ([b90bbd2](https://github.com/arco-design/arco-design-mobile/commit/b90bbd24bd1fee554ef095144b25b6f36132fa0f))
+
+
+### Features
+
+* add new component `Keyboard` ([#79](https://github.com/arco-design/arco-design-mobile/issues/79)) ([44cea7f](https://github.com/arco-design/arco-design-mobile/commit/44cea7fe8e4febde454a83edfda9a546409213ed))
+
+
+
+
+
+# [2.14.0](https://github.com/arco-design/arco-design-mobile/compare/@arco-design/mobile-utils@2.13.4...@arco-design/mobile-utils@2.14.0) (2023-04-11)
+
+
+### Features
+
+* `Carousel` & `NoticeBar` & `Input` & `Cell` rtl adaption ([bbd2fbb](https://github.com/arco-design/arco-design-mobile/commit/bbd2fbb3689a807f0d37b7ac51ac131e37224ae6))
+
+
+
+
+
 ## [2.13.4](https://github.com/arco-design/arco-design-mobile/compare/@arco-design/mobile-utils@2.13.3...@arco-design/mobile-utils@2.13.4) (2023-02-27)
 
 **Note:** Version bump only for package @arco-design/mobile-utils

@@ -3,6 +3,94 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.27.4](https://github.com/arco-design/arco-design-mobile/compare/@arco-design/mobile-react@2.27.3...@arco-design/mobile-react@2.27.4) (2023-05-19)
+
+
+### Bug Fixes
+
+* `IndexBar` remove redundant children judgement ([#123](https://github.com/arco-design/arco-design-mobile/issues/123)) ([cbba80d](https://github.com/arco-design/arco-design-mobile/commit/cbba80dcdb7d7b58e893ab9bd08cc3388008a6f3))
+* `ShowMonitor` fix disable observe when remount ([#125](https://github.com/arco-design/arco-design-mobile/issues/125)) ([73a5572](https://github.com/arco-design/arco-design-mobile/commit/73a5572961c7c2d6956c6c9406e486412b99e1c8))
+
+
+
+
+
+## [2.27.3](https://github.com/arco-design/arco-design-mobile/compare/@arco-design/mobile-react@2.27.2...@arco-design/mobile-react@2.27.3) (2023-05-16)
+
+
+### Bug Fixes
+
+* `Tabs` support swipe energy-saving mode ([50a440b](https://github.com/arco-design/arco-design-mobile/commit/50a440bc808c418a01160d8dcbaa2a870a5a4b97))
+
+
+
+
+
+## [2.27.2](https://github.com/arco-design/arco-design-mobile/compare/@arco-design/mobile-react@2.27.1...@arco-design/mobile-react@2.27.2) (2023-05-10)
+
+
+### Bug Fixes
+
+* `LoadMore` status reset time for controlled mode ([#121](https://github.com/arco-design/arco-design-mobile/issues/121)) ([f141e7f](https://github.com/arco-design/arco-design-mobile/commit/f141e7f8e91944f5d68bb5fbf59238d5d48b8eda))
+* `NavBar` fix warning in nextjs ssr ([#118](https://github.com/arco-design/arco-design-mobile/issues/118)) ([57c2838](https://github.com/arco-design/arco-design-mobile/commit/57c283852f26e06fb4d38dc8753cff7a34232a98))
+* `ShowMonitor` support observer singleton ([#113](https://github.com/arco-design/arco-design-mobile/issues/113)) ([7099b30](https://github.com/arco-design/arco-design-mobile/commit/7099b307935357e496b902f6148ea0854da2912a))
+* `SwipeLoad` support bounce animate ([#29](https://github.com/arco-design/arco-design-mobile/issues/29)) ([cad1a6b](https://github.com/arco-design/arco-design-mobile/commit/cad1a6ba19e6d45a33233281fba863434f553ce2))
+* `Tabs` enable auto scroll when activeTab changed in scroll mode ([#116](https://github.com/arco-design/arco-design-mobile/issues/116)) ([07374f1](https://github.com/arco-design/arco-design-mobile/commit/07374f105f99418d447fc494c90d99d876601f9b))
+
+
+
+
+
+## [2.27.1](https://github.com/arco-design/arco-design-mobile/compare/@arco-design/mobile-react@2.27.0...@arco-design/mobile-react@2.27.1) (2023-04-26)
+
+
+### Bug Fixes
+
+* `IndexBar` modify utils deps ([#115](https://github.com/arco-design/arco-design-mobile/issues/115)) ([b322d71](https://github.com/arco-design/arco-design-mobile/commit/b322d716e8dc6a107afb2a8b84edfcc0f5daddc2))
+
+
+
+
+
+# [2.27.0](https://github.com/arco-design/arco-design-mobile/compare/@arco-design/mobile-react@2.26.0...@arco-design/mobile-react@2.27.0) (2023-04-25)
+
+
+### Bug Fixes
+
+* `PickerView` support the complete data currently selected in "onPickerChange" & code optimization ([#60](https://github.com/arco-design/arco-design-mobile/issues/60)) ([b90bbd2](https://github.com/arco-design/arco-design-mobile/commit/b90bbd24bd1fee554ef095144b25b6f36132fa0f))
+* import style from dependent components ([8d6e0b0](https://github.com/arco-design/arco-design-mobile/commit/8d6e0b0a892b9cbd4ab521c5ef1b91439825ae18))
+
+
+### Features
+
+* add new component `IndexBar` ([#63](https://github.com/arco-design/arco-design-mobile/issues/63)) ([a76e57a](https://github.com/arco-design/arco-design-mobile/commit/a76e57a6fdeeb10255fe99ae37689f186d6ce471))
+* add new component `Keyboard` ([#79](https://github.com/arco-design/arco-design-mobile/issues/79)) ([44cea7f](https://github.com/arco-design/arco-design-mobile/commit/44cea7fe8e4febde454a83edfda9a546409213ed))
+
+
+
+
+
+# [2.26.0](https://github.com/arco-design/arco-design-mobile/compare/@arco-design/mobile-react@2.25.4...@arco-design/mobile-react@2.26.0) (2023-04-11)
+
+
+### Bug Fixes
+
+* `Carousel` fix confused rendering due to missing keys ([565b51e](https://github.com/arco-design/arco-design-mobile/commit/565b51ef84382fec04d9ecfd4264600a332913bc))
+* `Image` border radius ([#107](https://github.com/arco-design/arco-design-mobile/issues/107)) ([6f1fe3e](https://github.com/arco-design/arco-design-mobile/commit/6f1fe3e4d72330d7e65ea95a58e79231779ae2f7))
+* `Progress` state error when updating progress before animation done ([#105](https://github.com/arco-design/arco-design-mobile/issues/105)) ([a8d2398](https://github.com/arco-design/arco-design-mobile/commit/a8d2398f9139316985bd3c8ea1fd6760412bea5b))
+* `Tabs` support the prop "underlineAdaptive" ([b81b535](https://github.com/arco-design/arco-design-mobile/commit/b81b535e4933e0d51e0bcf8d7135b39d706f0b24))
+* add prop "blockChangeWhenCompositing" for input type components ([a082a02](https://github.com/arco-design/arco-design-mobile/commit/a082a02143cd53f61e757be7bd26391f8d04e6f6))
+
+
+### Features
+
+* `Carousel` & `NoticeBar` & `Input` & `Cell` rtl adaption ([bbd2fbb](https://github.com/arco-design/arco-design-mobile/commit/bbd2fbb3689a807f0d37b7ac51ac131e37224ae6))
+* add new component `Divider` ([#102](https://github.com/arco-design/arco-design-mobile/issues/102)) ([2ad2830](https://github.com/arco-design/arco-design-mobile/commit/2ad2830b3851cb1e7e8d96edda3a75f27edf2e7a))
+
+
+
+
+
 ## [2.25.4](https://github.com/arco-design/arco-design-mobile/compare/@arco-design/mobile-react@2.25.3...@arco-design/mobile-react@2.25.4) (2023-02-27)
 
 

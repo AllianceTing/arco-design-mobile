@@ -72,6 +72,7 @@ A full-screen menu based on a modal popup, supporting all directions. By default
 |isDarkMode|Whether it is in dark mode|boolean|false|
 |theme|Theme variable\. The css variable will be replaced online after input\. The less variable needs to be set|Record\<string, string\>|-|
 |locale|Internationalized language configuration|ILocale|-|
+|useRtl|Whether to use rtl|boolean|false|
 
 > ILocale
 
@@ -90,4 +91,5 @@ A full-screen menu based on a modal popup, supporting all directions. By default
 |ImagePicker|-|\{ loadError: string; \}|
 |SearchBar|-|\{ placeholder: string; cancelBtn: string; \}|
 |Stepper|-|\{ minusButtonName: string; addButtonName: string; \}|
+|Keyboard|-|\{ confirm: string; \}|
 |Form|-|\{ required: string; type: \{ email: string; url: string; string: string; number: string; array: string; object: string; boolean: string; \}; number: \{ min: string; max: string; equal: string; range: string; positive: string; negative: string; \}; string: \{ \.\.\.; \}; array: \{ \.\.\.; \}; object: \{ \.\.\.; \}; boolean: \{ \.\.\.; \}; \}|
